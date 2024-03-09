@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="438.0" prefWidth="754.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginformController">
+   <children>
+      <AnchorPane fx:id="SubAnchorPane" prefHeight="438.0" prefWidth="400.0" />
+      <ImageView fitHeight="438.0" fitWidth="359.0" layoutX="400.0">
+         <image>
+            <Image url="@../img/cover%20edit.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
