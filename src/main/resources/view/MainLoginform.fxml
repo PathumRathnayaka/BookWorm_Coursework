@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="488.0" prefWidth="831.0" style="-fx-background-color: #4d4d4d;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainLoginformController">
+   <children>
+      <AnchorPane fx:id="SubAnchorPane" layoutX="38.0" layoutY="32.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-radius: 20; -fx-background-color: #2e2f33;" />
+   </children>
+</AnchorPane>
