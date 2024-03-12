@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="187.0" style="-fx-background-color: #222c38;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserNavigationBarformController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutY="1.0" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: #2f3d4c; -fx-background-radius: 10;" text="DashBoard" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutY="50.0" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: #2f3d4c; -fx-background-radius: 10;" text="All Books" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutY="100.0" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: #2f3d4c; -fx-background-radius: 10;" text="Borrow Books" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutY="149.0" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: #2f3d4c; -fx-background-radius: 10;" text="Transaction" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -16,7 +16,7 @@ public class MainLoginformController {
         InitializeLogin();
     }
     public void InitializeLogin() throws IOException {
-        Parent node = FXMLLoader.load(this.getClass().getResource("/view/LoginNavigationform.fxml"));
+        Parent node = FXMLLoader.load(this.getClass().getResource("/view/UserLoginNavigationform.fxml"));
         this.SubAnchorPane.getChildren().clear();
         this.SubAnchorPane.getChildren().add(node);
     }

@@ -8,7 +8,7 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-public class LoginNavigationformController {
+public class UserLoginNavigationformController {
     @FXML
     private AnchorPane SubAnchorPane;
     public void initialize() throws IOException {
