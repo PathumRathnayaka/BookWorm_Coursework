@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="1155.0" style="-fx-background-color: #263340; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BranchformController">
+    <children>
+        <TextField layoutX="22.0" layoutY="188.0" prefHeight="25.0" prefWidth="252.0" />
+        <TextField layoutX="22.0" layoutY="240.0" prefHeight="25.0" prefWidth="252.0" />
+        <TextField layoutX="22.0" layoutY="293.0" prefHeight="25.0" prefWidth="252.0" />
+        <TextField layoutX="22.0" layoutY="131.0" prefHeight="25.0" prefWidth="252.0" />
+        <Label layoutX="39.0" layoutY="25.0" text="Branch" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="105.0" text="Branch ID" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="164.0" text="Name" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="218.0" text="Location" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="274.0" text="Remove" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+        </Label>
+        <TableView layoutX="321.0" layoutY="113.0" prefHeight="419.0" prefWidth="815.0">
+            <columns>
+                <TableColumn prefWidth="142.0" text="Branch ID" />
+                <TableColumn prefWidth="161.0" text="Name" />
+                <TableColumn prefWidth="344.0" text="Location" />
+                <TableColumn prefWidth="167.0" text="Remove" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="341.0" prefHeight="38.0" prefWidth="97.0" style="-fx-background-color: #2fbd59;" text="Add Branch" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="170.0" layoutY="341.0" prefHeight="38.0" prefWidth="97.0" style="-fx-background-color: #0679ff;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>
