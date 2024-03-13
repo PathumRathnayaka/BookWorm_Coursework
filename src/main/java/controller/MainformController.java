@@ -14,25 +14,44 @@ public class MainformController {
     private AnchorPane DashBoardPane;
     @FXML
     private AnchorPane widgetsPane;
+
+
     public void initialize() throws IOException {
-        InitializeNavigationBar();
-        InitializeUserDashBoard();
-        InitializeUserWidgets();
+      //  UserNavigationBar();
+       //UserDashBoard();
+        UserWidgets();
+        AdminNavigationBar();
+        Bookload();
+
     }
-    public void InitializeNavigationBar() throws IOException {
+
+
+    public void UserNavigationBar() throws IOException {
         Parent node = FXMLLoader.load(this.getClass().getResource("/view/UserNavigationBarform.fxml"));
         this.NavigationBar.getChildren().clear();
         this.NavigationBar.getChildren().add(node);
     }
-    public void InitializeUserDashBoard() throws IOException {
+    public void UserDashBoard() throws IOException {
         Parent node = FXMLLoader.load(this.getClass().getResource("/view/UserDashBoardform.fxml"));
         this.DashBoardPane.getChildren().clear();
         this.DashBoardPane.getChildren().add(node);
     }
-    public void InitializeUserWidgets() throws IOException {
+    public void UserWidgets() throws IOException {
         Parent node = FXMLLoader.load(this.getClass().getResource("/view/UserWidgetsform.fxml"));
         this.widgetsPane.getChildren().clear();
         this.widgetsPane.getChildren().add(node);
     }
+    public void AdminNavigationBar() throws IOException {
+        Parent node = FXMLLoader.load(this.getClass().getResource("/view/AdminNavigationbarform.fxml"));
+        this.NavigationBar.getChildren().clear();
+        this.NavigationBar.getChildren().add(node);
+    }
+    public void Bookload() throws IOException {
+        Parent node = FXMLLoader.load(this.getClass().getResource("/view/AdminBookformController.fxml"));
+        this.DashBoardPane.getChildren().clear();
+        this.DashBoardPane.getChildren().add(node);
+    }
+
+
 
 }
