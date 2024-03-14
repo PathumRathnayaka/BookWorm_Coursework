@@ -16,16 +16,16 @@
                 <Font name="Arial Rounded MT Bold" size="25.0" />
             </font>
         </Label>
-        <TableView layoutX="37.0" layoutY="93.0" prefHeight="406.0" prefWidth="926.0">
+        <TableView fx:id="tblBorrowBook" layoutX="37.0" layoutY="93.0" prefHeight="406.0" prefWidth="926.0">
             <columns>
-                <TableColumn prefWidth="148.0" text="Book ID" />
-                <TableColumn minWidth="0.0" prefWidth="353.0" text="Title" />
-                <TableColumn prefWidth="205.0" text="Date" />
-                <TableColumn prefWidth="219.0" text="Return Date" />
+                <TableColumn fx:id="clmnBookID" prefWidth="148.0" text="Book ID" />
+                <TableColumn fx:id="clmnTitle" minWidth="0.0" prefWidth="353.0" text="Title" />
+                <TableColumn fx:id="clmnDate" prefWidth="205.0" text="Date" />
+                <TableColumn fx:id="clmnReturnDate" prefWidth="219.0" text="Return Date" />
             </columns>
         </TableView>
-        <JFXTextField layoutX="694.0" layoutY="47.0" prefHeight="25.0" prefWidth="196.0" promptText="Search" unFocusColor="WHITE" />
-        <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="889.0" layoutY="44.0">
+        <JFXTextField fx:id="txtSearch" layoutX="694.0" layoutY="47.0" onAction="#txtSearchOnAction" prefHeight="25.0" prefWidth="196.0" promptText="Search" unFocusColor="WHITE" />
+        <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="889.0" layoutY="44.0" onKeyPressed="#imgKeyOnPress">
             <image>
                 <Image url="@../img/icons8-search-64.png" />
             </image>
