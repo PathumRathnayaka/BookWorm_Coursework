@@ -8,13 +8,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="585.0" prefWidth="1155.0" style="-fx-background-color: #263340; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminBookformController">
    <children>
-      <TextField layoutX="22.0" layoutY="188.0" prefHeight="25.0" prefWidth="252.0" />
-      <TextField layoutX="22.0" layoutY="240.0" prefHeight="25.0" prefWidth="252.0" />
-      <TextField layoutX="22.0" layoutY="293.0" prefHeight="25.0" prefWidth="252.0" />
-      <TextField layoutX="22.0" layoutY="131.0" prefHeight="25.0" prefWidth="252.0" />
+      <TextField fx:id="txtStatus" layoutX="22.0" layoutY="188.0" onAction="#txtStatusOnAction" prefHeight="25.0" prefWidth="252.0" />
+      <TextField fx:id="txtAuthor" layoutX="22.0" layoutY="240.0" onAction="#txtAuthorOnAction" prefHeight="25.0" prefWidth="252.0" />
+      <TextField fx:id="txtRemove" layoutX="22.0" layoutY="293.0" onAction="#txtRemoveOnAction" prefHeight="25.0" prefWidth="252.0" />
+      <TextField fx:id="txtBookID" layoutX="22.0" layoutY="131.0" onAction="#txtBookIDOnAction" prefHeight="25.0" prefWidth="252.0" />
       <Label layoutX="39.0" layoutY="25.0" text="Book Manage" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="32.0" />
@@ -40,20 +39,20 @@
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <TableView layoutX="321.0" layoutY="113.0" prefHeight="419.0" prefWidth="815.0">
+      <TableView fx:id="tblBookManage" layoutX="321.0" layoutY="113.0" prefHeight="419.0" prefWidth="815.0">
         <columns>
-          <TableColumn prefWidth="142.0" text="Book ID" />
-          <TableColumn prefWidth="161.0" text="Status" />
-            <TableColumn prefWidth="344.0" text="Author" />
-            <TableColumn prefWidth="167.0" text="Remove" />
+          <TableColumn fx:id="clmnBookId" prefWidth="142.0" text="Book ID" />
+          <TableColumn fx:id="clmnStatus" prefWidth="161.0" text="Status" />
+            <TableColumn fx:id="clmnAuthor" prefWidth="344.0" text="Author" />
+            <TableColumn fx:id="clmnRemove" prefWidth="167.0" text="Remove" />
         </columns>
       </TableView>
-      <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="341.0" prefHeight="38.0" prefWidth="97.0" style="-fx-background-color: #2fbd59;" text="Add Book" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="341.0" onAction="#btnAddBookOnAction" prefHeight="38.0" prefWidth="97.0" style="-fx-background-color: #2fbd59;" text="Add Book" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="170.0" layoutY="341.0" prefHeight="38.0" prefWidth="97.0" style="-fx-background-color: #0679ff;" text="Update" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="170.0" layoutY="341.0" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="97.0" style="-fx-background-color: #0679ff;" text="Update" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>

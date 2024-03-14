@@ -3,6 +3,7 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -47,9 +48,21 @@ public class MainformController {
         this.NavigationBar.getChildren().add(node);
     }
     public void Bookload() throws IOException {
-        Parent node = FXMLLoader.load(this.getClass().getResource("/view/AdminBookformController.fxml"));
+        /*Parent node = FXMLLoader.load(this.getClass().getResource("/view/AdminBookformController.fxml"));
         this.DashBoardPane.getChildren().clear();
-        this.DashBoardPane.getChildren().add(node);
+        this.DashBoardPane.getChildren().add(node);*/
+
+        // Load the FXML file
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/AdminBookformController.fxml"));
+        Parent node = fxmlLoader.load();
+
+        // Set the CSS stylesheet to the loaded scene
+        Scene scene = new Scene(node);
+        scene.getStylesheets().add(getClass().getResource("/css/TableView.css").toExternalForm());
+
+        // Clear and add the loaded node to the DashBoardPane
+        DashBoardPane.getChildren().clear();
+        DashBoardPane.getChildren().add(node);
     }
 
 
