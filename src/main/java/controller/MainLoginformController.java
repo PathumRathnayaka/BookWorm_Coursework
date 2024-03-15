@@ -8,7 +8,7 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 
 public class MainLoginformController {
-    public AnchorPane root;
+    public static AnchorPane root;
     @FXML
     private AnchorPane SubAnchorPane;
 

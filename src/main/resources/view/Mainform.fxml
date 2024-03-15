@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="740.0" prefWidth="1366.0" style="-fx-background-color: #2e2f33;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainformController">
+<AnchorPane fx:id="root" prefHeight="740.0" prefWidth="1366.0" style="-fx-background-color: #2e2f33;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainformController">
    <children>
       <AnchorPane fx:id="DashBoardPane" layoutX="202.0" layoutY="142.0" prefHeight="585.0" prefWidth="1155.0" style="-fx-background-color: #263340; -fx-background-radius: 10;" />
       <ImageView fitHeight="84.0" fitWidth="200.0" layoutX="22.0" layoutY="29.0">
@@ -14,5 +15,6 @@
       </ImageView>
       <AnchorPane fx:id="NavigationBar" layoutX="6.0" layoutY="142.0" prefHeight="494.0" prefWidth="187.0" style="-fx-background-color: #ffffff;" />
       <AnchorPane fx:id="widgetsPane" layoutX="248.0" layoutY="37.0" prefHeight="84.0" prefWidth="1107.0" style="-fx-background-color: #263340; -fx-background-radius: 10;" />
+      <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="685.0" onAction="#btnLogOutOnAction" prefHeight="33.0" prefWidth="95.0" style="-fx-background-color: #0679ff;" text="Log Out" textFill="WHITE" />
    </children>
 </AnchorPane>
