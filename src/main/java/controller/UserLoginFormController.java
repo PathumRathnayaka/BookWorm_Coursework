@@ -25,12 +25,11 @@ public class UserLoginFormController {
         primaryStage.centerOnScreen();
         primaryStage.show();*/
 
-        Parent parent=FXMLLoader.load(this.getClass().getResource("/view/Mainform.fxml"));
+        Parent parent=FXMLLoader.load(this.getClass().getResource("/view/UserMainform.fxml"));
         Scene scene=new Scene(parent);
         Stage stage= (Stage) userLoginroot.getScene().getWindow();
         stage.setScene(scene);
         stage.centerOnScreen();
-
     }
 
 }

@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MainformController {
+public class UserMainformController {
     @FXML
     private AnchorPane root;
     @FXML
@@ -22,13 +22,10 @@ public class MainformController {
 
 
     public void initialize() throws IOException {
-      //  UserNavigationBar();
-       //UserDashBoard();
-        UserWidgets();
-        AdminNavigationBar();
-        Bookload();
+
 
     }
+
 
 
     public void UserNavigationBar() throws IOException {
